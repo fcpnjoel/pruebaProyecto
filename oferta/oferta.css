@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  background-image: linear-gradient(180deg, #ffb629 0, #ffa537 10%, #ff9243 20%, #ff7e4b 30%, #ff6951 40%, #f25353 50%, #d93f53 60%, #c22f54 70%, #ad2355 80%, #9b1b56 90%, #8c1859 100%);
+  padding-bottom: 100px;
+}
+
+.ofertas .container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.ofertas .container .inicio {
+  display: flex;
+}
+.ofertas .container .inicio p {
+  background-color: red;
+  padding: 10px 40px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.ofertas .container .inicio p a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.ofertas .container .ofertas {
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+  gap: 30px;
+}
+.ofertas .container .ofertas .hacer {
+  background-image: linear-gradient(225deg, #121b1a 0, #0b1110 25%, #000000 50%, #000000 75%, #000000 100%);
+  border: 5px solid white;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ofertas .container .ofertas .hacer h1 {
+  font-size: 40px;
+}
+.ofertas .container .ofertas .hacer ul {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 20px;
+}
+.ofertas .container .ofertas .primero {
+  background-image: linear-gradient(225deg, #121b1a 0, #0b1110 25%, #000000 50%, #000000 75%, #000000 100%);
+  border: 5px solid white;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ofertas .container .ofertas .primero h1 {
+  font-size: 30px;
+}
+.ofertas .container .ofertas .primero ul {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1130px) {
+  .ofertas .container .ofertas {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+}/*# sourceMappingURL=oferta.css.map */

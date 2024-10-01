@@ -1,0 +1,341 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 0%, rgb(0, 212, 255) 100%);
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 50px;
+}
+
+header {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  z-index: 10;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+  font-size: 20px;
+  padding: 20px 10px;
+  position: relative;
+}
+header .container .volver a {
+  color: white;
+}
+header .container .links ul {
+  display: flex;
+  gap: 30px;
+}
+header .container .links ul li a {
+  color: white;
+}
+header .container .links .cerrar {
+  display: none;
+}
+header .container .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px 0;
+  display: none;
+}
+
+main {
+  margin: 0 100px;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.deslizar {
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  margin-top: 100px;
+  width: 100%;
+}
+.deslizar .arrow {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 20px;
+}
+.deslizar .paper {
+  padding: 100px 50px;
+}
+.deslizar .paper .ball {
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+  gap: 50px;
+}
+.deslizar .paper .ball .prim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.deslizar .paper .ball .prim .img img {
+  height: 200px;
+  width: auto;
+}
+.deslizar .paper .ball .prim .le {
+  color: white;
+}
+.deslizar .paper .ball .secon {
+  margin-right: 100px;
+}
+.deslizar .paper .ball .secon .vi {
+  display: flex;
+  justify-content: center;
+}
+.deslizar .paper .ball .secon .vi iframe {
+  border: 5px solid white;
+}
+
+.peliculas .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.peliculas .container h1 {
+  color: white;
+  font-size: 50px;
+}
+.peliculas .container .pel {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+.peliculas .container .pel .prin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.peliculas .container .pel .prin .yes {
+  display: flex;
+  gap: 30px;
+}
+.peliculas .container .pel .prin .yes .img img {
+  width: 150px;
+}
+.peliculas .container .pel .prin .yes .letter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: black;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px black;
+}
+.peliculas .container .pel .prin .yes .letter p {
+  color: white;
+}
+.peliculas .container .pel .others {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+.peliculas .container .pel .others .img img {
+  width: 150px;
+  height: 200px;
+  box-shadow: 0px 0px 30px black;
+}
+
+.series .container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.series .container h1 {
+  color: white;
+  font-size: 50px;
+}
+.series .container .ser {
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(4, 1fr);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 30px;
+  border: 5px solid white;
+  box-shadow: 0 0 30px black;
+}
+.series .container .ser .mmr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.series .container .ser .mmr .first .img {
+  display: flex;
+  justify-content: center;
+}
+.series .container .ser .mmr .first .img img {
+  height: 150px;
+  width: auto;
+}
+.series .container .ser .mmr .con {
+  line-height: 2;
+}
+
+.cortos .container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.cortos .container h1 {
+  color: white;
+  font-size: 50px;
+}
+.cortos .container .cor {
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+  gap: 30px;
+}
+.cortos .container .cor .rr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 30px;
+  box-shadow: 0 0 30px black;
+  padding: 30px;
+}
+.cortos .container .cor .rr .uno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cortos .container .cor .rr .uno .img img {
+  height: 150px;
+  width: auto;
+}
+.cortos .container .cor .rr .dos {
+  line-height: 2;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    z-index: 10;
+  }
+  header .container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  header .container .volver {
+    padding: 20px 10px;
+  }
+  header .container .links {
+    position: absolute;
+    width: 100%;
+    top: -250px;
+    transition: 0.5s;
+  }
+  header .container .links ul {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  header .container .links .cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: block;
+  }
+  header .container .links .cerrar i {
+    color: white;
+  }
+  header .container .down {
+    top: 0;
+  }
+  header .container .icon {
+    display: block;
+    cursor: pointer;
+  }
+  header .container .icon i {
+    color: white;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main .peliculas .container .pel .prin {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .peliculas .container .pel .prin .yes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .peliculas .container .pel .others {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .series .container .ser {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .series .container .ser {
+    display: flex;
+    flex-direction: column;
+  }
+  .cortos .container .cor {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1111px) {
+  .deslizar .paper .ball {
+    display: flex;
+    flex-direction: column;
+  }
+  .deslizar .paper .ball .prim {
+    display: grid;
+    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+  }
+  .deslizar .paper .ball .prim .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .deslizar .paper .ball .prim .le {
+    margin-right: 100px;
+  }
+}/*# sourceMappingURL=pelicula.css.map */

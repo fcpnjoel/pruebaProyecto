@@ -1,0 +1,148 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 0%, rgb(0, 212, 255) 100%);
+}
+
+header {
+  background-color: black;
+  border-bottom: 2px solid white;
+  position: fixed;
+  width: 100%;
+}
+header .container {
+  margin: 0 150px;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .volver p a {
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+}
+header .container .logo .img img {
+  width: 70px;
+  border-radius: 30px;
+}
+header .container .link p a {
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .container {
+  background-color: white;
+  border: 5px solid black;
+  max-width: 500px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 20px;
+  margin: 200px 0;
+}
+
+select {
+  height: 50px;
+  padding: 0 15px;
+}
+
+label {
+  color: gray;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+input {
+  height: 45px;
+  padding: 0 15px;
+}
+
+.other {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  gap: 20px;
+}
+
+.other div {
+  display: flex;
+  flex-direction: column;
+}
+
+.paper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.last {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last :last-child {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.last :first-child {
+  color: gray;
+  cursor: pointer;
+}
+
+.last :first-child:hover {
+  text-decoration: underline;
+}
+
+#btn {
+  width: 100%;
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  header .container {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 650px) {
+  section .container {
+    max-width: 300px;
+  }
+  section .container form .nombre_l input {
+    width: 200px;
+  }
+  section .container form .other {
+    display: block;
+  }
+  section .container form .paper {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=suscribirse.css.map */

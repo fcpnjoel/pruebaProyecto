@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="suscribirse.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="volver">
+                <p><a href="../index.html">Volver inicio</a></p>
+            </div>
+            <div class="logo">
+                <div class="img"><img src="../img/logoPro.jpg" alt=""></div>
+            </div>
+            <div class="link">
+                <p><a href="../inicio/Inicio.html">Iniciar seesion</a></p>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1>Crea tu cuenta</h1>
+            <form action="">
+                <div class="nombre_l">
+                    <label for="">Nombre de Usuario</label><br>
+                    <input type="text" size="60%" id="nu"><br><br>
+                </div>
+                <div class="other">
+                    <div class="nb">
+                        <label for="">Nombre</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="ape">
+                        <label for="">Apellido</label>
+                        <input type="text" id="appel"><br><br>
+                    </div>
+                    <div class="tele">
+                        <label for="">Telefono de contacto</label>
+                        <input type="text" value="+591 " id="num">
+                    </div>
+                    <div class="correo">
+                        <label for="">Correo electronico</label>
+                        <input type="email" placeholder="nombre@mail.com"><br><br>
+                    </div>
+                    <div class="nego">
+                        <label for="">Contraseña</label>
+                        <input type="password" name="" id="passw">
+                    </div>
+                    <div class="sucu">
+                        <label for="">Confirmar constraseña</label>
+                        <input type="password" id="conf"><br><br>
+                    </div>
+                </div>
+                <div class="paper">
+                    <label for="">Metodo de contacto preferido</label>
+                    <input type="radio" name="yes">Telefono 
+                    <input type="radio" name="yes">WhatsApp
+                    <input type="radio" name="yes">Email
+                </div>
+                <div class="final">
+                    <input type="button" value="Crear cuenta" id="btn" onclick="listo()">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="suscribirse.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    // background-image: linear-gradient(180deg, #ffb629 0, #ffa537 10%, #ff9243 20%, #ff7e4b 30%, #ff6951 40%, #f25353 50%, #d93f53 60%, #c22f54 70%, #ad2355 80%, #9b1b56 90%, #8c1859 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+
+    padding: 100px 0;
+}
+img {
+    width: 50px;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: black;
+    border-bottom: 2px solid white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    .container {
+        margin: 0 150px;
+        display: flex;
+        padding: 10px 0;
+        justify-content: space-between;
+        align-items: center;
+        .volver {
+            p {
+                a {
+                    background-color: red;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    color: white;
+                }
+            }
+        }
+        .logo {
+            .img {
+                img {
+                    width: 70px;
+                    border-radius: 30px;
+                }
+            }
+        }
+        .link {
+            p {
+                a {
+                    background-color: red;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.inicio {
+
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    // background-color: blue;
+    .container {
+        // background-color: black;
+        width: 1000px;
+        padding: 20px;
+        border: 5px solid white;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 30px;
+        .sss {
+            display: flex;
+            justify-content: center;
+            h1 {
+                font-size: 40px;
+                color: white;
+            }
+        }
+        .ahora {
+            form {
+                display: flex;
+                flex-direction: column;
+                // gap: 30px;
+
+                p {
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    padding-bottom: 20px;
+                }
+                input {
+                    border: 1px solid gray;
+                    background-color: black;
+                    color: white;
+                    padding: 20px ;
+                    font-size: 20px;
+                }
+                .olv {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;  
+                    input {
+                        font-size: 20px;
+                        border: none;
+                        color: white;
+                        background-color: red;
+                        padding: 10px 40px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                    }
+                    .a {
+                        a {
+                            font-weight: bolder;
+                            color: white;
+                            // background-color: red;
+                        }
+                    }
+                }
+                .sus {
+                    // background-color: pink;
+                    padding-top: 60px;
+                    display: flex;
+                    justify-content: center;
+                    
+                    #more {
+                        color: white;
+                        background-color: red;
+                        padding: 10px 60px;
+                        border-radius: 30px;
+                    }
+                    
+                }
+            }
+        }
+        p {
+            a {
+                color: white;
+            }
+        }
+    }
+}
+.welcome {
+    color: white;
+    background-color: green;
+    padding: 10px 60px;
+    border-radius: 30px;
+
+}
+
+
+@media screen and (max-width: 700px) {
+    header {
+        .container {
+            margin: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .inicio {
+        .container {
+            width: 500px;
+        }
+    }
+}
